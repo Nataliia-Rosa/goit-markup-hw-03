@@ -1,0 +1,125 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #434455;
+    background-color: #fff;
+}
+ul, ol {
+	list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+/* #region header */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#4d5ae5;
+}
+.logo .partlogo {
+    color: #2e2f42;
+}
+.link {
+    font-weight: 500;
+    color: #2e2f42;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus {
+    color: #404bbf;
+}
+.infoadderess {
+    font-style: normal;
+}
+.link-address {
+    color: currentColor;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.link-address:hover, 
+.link-address:focus {
+    color: #404bbf;
+}
+
+/* #endregion header */
+
+/* #region order service */
+.hero-image {
+    background-color: #2e2f42;
+}
+.h-main {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
+.butt-on {
+    background-color: #4d5ae5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+.butt-on:hover, 
+.butt-on:focus {
+    background-color: #404BBF;
+}
+/* #endregion order service */
+
+/* #region strategy */
+.second-h {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+}
+.third-h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.main-parag {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* #endregion strategy */
+
+/* #region team */
+.team {
+    background: #f4f4fd;
+    text-align: center;
+}
+.list-team {
+    background: #fff;
+}
+/* #endregion team */
+
+/* #region footer */
+.foo-ter {
+    background: #2e2f42;
+}
+.partlogo-footer {
+    color: #f4f4fd;
+}
+.parag {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;;
+}
+/* #endregion footer */
