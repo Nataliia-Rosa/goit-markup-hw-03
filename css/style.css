@@ -7,6 +7,20 @@ body {
 }
 ul, ol {
 	list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-bottom: 0;
+margin-top: 0;
+}
+img {
+    display: block;
 }
 a {
     text-decoration: none;
@@ -14,7 +28,49 @@ a {
 button {
     cursor: pointer;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container { 
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+    
 /* #region header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e9fc;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-header {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+.navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.address-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -28,6 +84,8 @@ button {
     color: #2e2f42;
 }
 .link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     color: #2e2f42;
     line-height: 1.5;
@@ -41,6 +99,8 @@ button {
     font-style: normal;
 }
 .link-address {
+    display: block;
+    padding: 24px 0;
     color: currentColor;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -53,18 +113,29 @@ button {
 /* #endregion header */
 
 /* #region order service */
+.hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
+}
 .hero-image {
     background-color: #2e2f42;
 }
 .h-main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 51px;
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
 }
 .butt-on {
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 4px;
     background-color: #4d5ae5;
     font-weight: 500;
     line-height: 1.5;
@@ -78,6 +149,23 @@ button {
 /* #endregion order service */
 
 /* #region strategy */
+.strategy-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.values-container {
+    display: flex;
+    gap: 24px;
+}
+.li-items {
+    max-width: calc((100% - 24px * 3) / 4);
+}
+.values-container .third-h {
+    margin-bottom: 8px;
+}
+.card-container {
+    margin: 32px 16px;
+}
 .second-h {
     font-weight: 700;
     font-size: 36px;
@@ -101,16 +189,69 @@ button {
 /* #endregion strategy */
 
 /* #region team */
+.team-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.list-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.team-container .second-h {
+    margin-bottom: 72px;
+}
+.team-container .third-h {
+    margin-bottom: 8px;
+}
 .team {
     background: #f4f4fd;
     text-align: center;
 }
 .list-team {
+    border-radius: 0 0 4px 4px;
     background: #fff;
 }
 /* #endregion team */
 
+/* #region portfolio */
+.portfolio-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.portfolio-container .second-h {
+    margin-bottom: 72px;
+}
+.list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.li-portfolio {
+    max-width: calc((100% - 24px * 2) / 3);
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+}
+.portfolio-card {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+.portfolio-card .third-h {
+    margin-bottom: 8px;
+}
+/* #endregion portfolio */
+
 /* #region footer */
+.foot-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.foot-logo {
+    display: block;
+    margin-bottom: 16px;
+}
 .foo-ter {
     background: #2e2f42;
 }
@@ -118,6 +259,7 @@ button {
     color: #f4f4fd;
 }
 .parag {
+    max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;;
