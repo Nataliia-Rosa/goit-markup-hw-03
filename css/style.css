@@ -114,9 +114,8 @@ button {
 /* #region order service */
 .hero-image {
     background-color: #2e2f42;
-}
-.hero-container {
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .h-main {
     margin-left: auto;
@@ -232,15 +231,13 @@ button {
 .list-portfolio {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 24px;
 }
 .li-items-portfolio {
     max-width: calc((100% - 24px * 2) / 3);
 }
 .portfolio-card {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -257,7 +254,7 @@ button {
     padding-bottom: 100px;
 }
 .foot-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 .partlogo-footer {
