@@ -231,7 +231,8 @@ button {
 .list-portfolio {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .li-items-portfolio {
     max-width: calc((100% - 24px * 2) / 3);
